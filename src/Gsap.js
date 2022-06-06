@@ -1,7 +1,9 @@
 import React from 'react'
 import { gsap } from "gsap";
 
-export default function Script() {
+
+export default function Gsap() {
+
   return (
     <div>
       {
@@ -25,7 +27,9 @@ export default function Script() {
             stagger: 0.1,
           })
         })
+        
       }
-</div>
+   </div>
   )
 }
+

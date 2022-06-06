@@ -1,8 +1,7 @@
 import React from 'react'
 import './HomePage.css'
-import rubyImage from "../../images/ruby.png";
-import tailwindImage from "../../images/tailwind.png";
-import reactImage from "../../images/react.png";
+import rubyImage from "../../images/language/ruby.png";
+import tailwindImage from "../../images/framework/tailwind.png";
 import trentalGif from "../../images/trental.gif";
 import healingGif from "../../images/healing.gif";
 import searchGif from "../../images/search.gif";
@@ -10,59 +9,56 @@ import questionGif from "../../images/question.gif";
 import githubImage from "../../images/github.png";
 import { Link } from 'react-router-dom';
 import Header from '../header/Header';
-
-
+import { Scroll } from '../../ScrollReveal';
 
 export default function HomePage() {
-  return (
-    <div className="home-container text-center" id='top'>
 
+  return (
+    
+    <div className="home-container text-center" id='top'>
+      <Header home/>
       <section className="hero-sec">
-        <h1 className='w-screen h-screen top-0 left-0 z-10 text-gray-100 flex items-center   justify-center'>YAMA CODO.</h1>
+        <h1 className='w-screen h-screen text-3xl top-0 left-0 z-10 text-white flex items-center justify-center'>YAMA CODO.</h1>
       </section>
 
       <div className="cursor"></div>
-      <div className="circles relative h-screen w-screen">
-        <div className="circle circle1"></div>
-        <div className="circle circle2"></div>
-        <div className="circle circle3"></div>
-        <div className="circle circle4"></div>
-        <div className="circle circle5"></div>
-        <div className="circle circle6"></div>
-        <div className="circle circle7"></div>
-      <div className="content">Thank you for coming.</div>
-      </div>
+      <Scroll>
+        <div className="circles relative h-screen w-screen overflow-hidden">
+          <div className="circle circle1"></div>
+          <div className="circle circle2"></div>
+          <div className="circle circle3"></div>
+          <div className="circle circle4"></div>
+          <div className="circle circle5"></div>
+          <div className="circle circle6"></div>
+          <div className="circle circle7"></div>  
+          <h1 className="content">Thank you for coming.</h1>
+        </div>
+      </Scroll>
 
       <div className='about-bg'></div>
       
-      <section className="about-sec py-32">
-        <h2 className='text-9xl text-shadow-xl mb-16'>About</h2>
+      <section className="about-sec py-32" id="about">
+        <h2 className='text-7xl text-shadow-xl mb-16'>About</h2>
         <p>未経験での転職を考えDMMにてプログラミングの学習をスタートしました。HTML/CSSの基礎を学び、その後Ruby on Railsを中心とした学習を進めPFを完成させました。現在はJavaScriptのライブラリであるReact.js/Node.jsなどを学んでいます。</p>
       </section>
 
       <div className='skill-bg'></div>
 
-      <section className='skill-sec py-32'>
-        <h2 className="text-5xl text-shadow-xl mb-16">My Skill</h2>
+      <section className='skill-sec py-32' id="skill">
+        <h2 className="text-7xl text-shadow-xl mb-16">My Skill</h2>
         <div className="grid grid-cols-1 text-center">
-          <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-20">
-            <div class="">
+          <div className="grid lg:grid-cols-2 md:grid-cols-3 sm:grid-cols-1 gap-20">
+            <div class="skill-img ">
               <Link to="/language">
-                <img src={rubyImage} className="skill-img"/>
+                <img src={rubyImage} className=""/>
+                <h4>Language</h4>
               </Link>
-              <h4>Language</h4>
             </div>
-            <div class="">
+            <div class="skill-img">
               <Link to="/framework">
-                <img src={tailwindImage} className="skill-img"/>
+                <img src={tailwindImage} className=""/>
               </Link>
               <h4>Framework</h4>
-            </div>
-            <div class="">
-              <Link to="library">
-                <img src={reactImage} className="skill-img"/>
-              </Link>
-              <h4>Library</h4>
             </div>
           </div>
         </div>
@@ -71,7 +67,7 @@ export default function HomePage() {
       <div className='pf-bg'></div>
 
       <section class="pf-sec py-32" id='pf'>
-        <h1 class="text-5xl text-shadow-xl mb-16">Potofolio</h1>
+        <h1 class="text-7xl text-shadow-xl mb-16">Potofolio</h1>
         <div className="grid grid-cols-1 text-center">
           <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-20 mx-auto">
             <div class="btnshine">
