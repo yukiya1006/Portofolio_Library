@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/Potofolio_Library/static/css/main.a99d1c54.css",
+    "main.js": "/Potofolio_Library/static/js/main.ef6a178e.js",
+    "static/media/healing.gif": "/Potofolio_Library/static/media/healing.24cd79a027e3564ca4f9.gif",
+    "static/media/trental.gif": "/Potofolio_Library/static/media/trental.d8369de98204ce0f8359.gif",
+    "static/media/bg-05.png": "/Potofolio_Library/static/media/bg-05.c5bed260e3e9f4083e64.png",
+    "static/media/question.gif": "/Potofolio_Library/static/media/question.fbe76e5849a49c5a3478.gif",
+    "static/media/search.gif": "/Potofolio_Library/static/media/search.e81ea4ac67521271e2cc.gif",
+    "static/media/bg-03.jpg": "/Potofolio_Library/static/media/bg-03.90b1022dbf8fc884d6d7.jpg",
+    "static/media/bg-02.jpg": "/Potofolio_Library/static/media/bg-02.0500fe3a1dd08ce4a4b2.jpg",
+    "static/media/bg-04.jpg": "/Potofolio_Library/static/media/bg-04.33f90276cb9dcc8888a2.jpg",
+    "static/media/jquery.png": "/Potofolio_Library/static/media/jquery.5218d846e86fbcafcc5d.png",
+    "static/media/javascript.png": "/Potofolio_Library/static/media/javascript.83903b30822753b81ed1.png",
+    "static/media/html.png": "/Potofolio_Library/static/media/html.1d7b133e22ffe4829da6.png",
+    "static/media/ruby.png": "/Potofolio_Library/static/media/ruby.a7397f5762877452df57.png",
+    "static/media/css.png": "/Potofolio_Library/static/media/css.9f33c557b92e4e2e1cc8.png",
+    "static/media/bootstrap.png": "/Potofolio_Library/static/media/bootstrap.d5210cdeab1bc94309c4.png",
+    "static/media/rails.png": "/Potofolio_Library/static/media/rails.3fbaaeb138d05b609e30.png",
+    "static/media/vue.png": "/Potofolio_Library/static/media/vue.4626039760cedf966189.png",
+    "static/media/react.png": "/Potofolio_Library/static/media/react.20adfb35ae6a6e5817bf.png",
+    "static/media/github.png": "/Potofolio_Library/static/media/github.06f6b12f7db7f925f850.png",
+    "static/media/node.png": "/Potofolio_Library/static/media/node.07d152a8a036951b8d14.png",
+    "index.html": "/Potofolio_Library/index.html",
+    "main.a99d1c54.css.map": "/Potofolio_Library/static/css/main.a99d1c54.css.map",
+    "main.ef6a178e.js.map": "/Potofolio_Library/static/js/main.ef6a178e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a99d1c54.css",
+    "static/js/main.ef6a178e.js"
+  ]
+}
