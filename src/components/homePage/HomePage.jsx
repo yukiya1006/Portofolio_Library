@@ -18,7 +18,7 @@ export default function HomePage() {
     <div className="home-container text-center" id='top'>
       <Header home/>
       <section className="hero-sec">
-        <h1 className='w-screen h-screen text-3xl top-0 left-0 z-10 text-white flex items-center justify-center'>YAMA CODO.</h1>
+        <h1 className='w-screen h-screen lg:text-9xl md:text-9xl text-4xl top-0 left-0 z-10 flex items-center justify-center font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Portfolio Library</h1>
       </section>
 
       <div className="cursor"></div>
@@ -37,64 +37,70 @@ export default function HomePage() {
 
       <div className='about-bg'></div>
       
-      <section className="about-sec py-32" id="about">
-        <h2 className='text-7xl text-shadow-xl mb-16'>About</h2>
-        <p>未経験での転職を考えDMMにてプログラミングの学習をスタートしました。HTML/CSSの基礎を学び、その後Ruby on Railsを中心とした学習を進めPFを完成させました。現在はJavaScriptのライブラリであるReact.js/Node.jsなどを学んでいます。</p>
-      </section>
+      <Scroll>
+        <section className="about-sec py-32 text-white" id="about">
+          <h2 className='text-7xl text-shadow-xl mb-16'>About</h2>
+          <p className='text-2xl'>未経験での転職を考えDMMにてプログラミングの学習をスタートしました。HTML/CSSの基礎を学び、その後Ruby on Railsを中心とした学習を進めPFを完成させました。現在はJavaScriptのライブラリであるReact.js/Node.jsなどを学んでいます。</p>
+        </section>
+      </Scroll>
 
       <div className='skill-bg'></div>
-
-      <section className='skill-sec py-32' id="skill">
-        <h2 className="text-7xl text-shadow-xl mb-16">My Skill</h2>
-        <div className="grid grid-cols-1 text-center">
-          <div className="grid lg:grid-cols-2 md:grid-cols-3 sm:grid-cols-1 gap-20">
-            <div class="skill-img ">
-              <Link to="/language">
-                <img src={rubyImage} className=""/>
-                <h4>Language</h4>
-              </Link>
-            </div>
-            <div class="skill-img">
-              <Link to="/framework">
-                <img src={tailwindImage} className=""/>
-              </Link>
-              <h4>Framework</h4>
+      
+      <Scroll>
+        <section className='skill-sec py-32 text-white' id="skill">
+          <h2 className="text-7xl text-shadow-xl mb-16">My Skill</h2>
+          <div className="grid grid-cols-1 text-center">
+            <div className="grid lg:grid-cols-2 md:grid-cols-3 sm:grid-cols-1 gap-20">
+              <div class="skill-img ">
+                <Link to="/language">
+                  <img src={rubyImage} className=""/>
+                  <h4>Language</h4>
+                </Link>
+              </div>
+              <div class="skill-img">
+                <Link to="/framework">
+                  <img src={tailwindImage} className=""/>
+                </Link>
+                <h4>Framework</h4>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </Scroll>
 
       <div className='pf-bg'></div>
-
-      <section class="pf-sec py-32" id='pf'>
-        <h1 class="text-7xl text-shadow-xl mb-16">Potofolio</h1>
-        <div className="grid grid-cols-1 text-center">
-          <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-20 mx-auto">
-            <div class="btnshine">
-              <img src={trentalGif} className="pf-img"/>
-              <h4>Trental</h4>
+      
+      <Scroll>
+        <section class="pf-sec py-32 text-white" id='pf'>
+          <h1 class="text-7xl text-shadow-xl mb-16">Potofolio</h1>
+          <div className="grid grid-cols-1 text-center">
+            <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-20 mx-auto">
+              <div class="btnshine">
+                <img src={trentalGif} className="pf-img"/>
+                <h4>Trental</h4>
+              </div>
+              <div class="btnshine">
+                <img src={healingGif} className="pf-img"/>
+                <h4>Healing App</h4>
+              </div>  
+              <div class="btnshine">
+                <img src={searchGif} className="pf-img"/>
+                <h4>Ansplash Searching App</h4>
+              </div>
+              <div class="btnshine">
+                  <img src={questionGif} className="pf-img"/>
+                <h4>Question Game</h4>
+              </div>
             </div>
-            <div class="btnshine">
-              <img src={healingGif} className="pf-img"/>
-              <h4>Healing App</h4>
-            </div>  
-            <div class="btnshine">
-              <img src={searchGif} className="pf-img"/>
-              <h4>Ansplash Searching App</h4>
-            </div>
-            <div class="btnshine">
-                <img src={questionGif} className="pf-img"/>
-              <h4>Question Game</h4>
+            <div className='bg-transparent hover:bg-purple-500 text-white font-semibold hover:text-white py-2 px-4    hover:border-transparent rounded transition ease-in-out delay-150 duration-300 w-68 h-16 mx-auto my-auto mt-20'>
+              <a href="https://github.com/yukiya1006" className='flex justify-center items-center my-auto'>
+                <h2 className="text-3xl">View More</h2>
+                <img src={githubImage} className="h-12 w-12 object-fit ml-4"/>
+              </a>
             </div>
           </div>
-          <div className='bg-transparent hover:bg-purple-500 text-purple-700 font-semibold hover:text-white py-2 px-4    hover:border-transparent rounded transition ease-in-out delay-150 duration-300 w-68 h-16 mx-auto my-auto mt-20'>
-            <a href="https://github.com/yukiya1006" className='flex justify-center items-center my-auto'>
-              <h2 className="text-3xl">View More</h2>
-              <img src={githubImage} className="h-12 w-12 object-fit ml-4"/>
-            </a>
-          </div>
-        </div>
-      </section>
+        </section>
+      </Scroll>
   </div>
 );
 };

@@ -8,14 +8,18 @@
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+  animation: move-hero 1s;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+.hero-sec h1{
   animation: move-hero 2s;
   animation-iteration-count: 1;
   animation-duration: 3s;
   animation-delay: 1s;
-  background-color: #000;
 }
-
-
 
 .about-bg{
   width: 100%;
@@ -28,12 +32,8 @@
   z-index: 1;
 }
 
-.about-sec{
-  z-index: 1000;
-}
-
 .about-sec p{
-  width: 500px;
+  width: 800px;
   word-wrap: break-word;
   margin: 0 auto;
 }
@@ -152,7 +152,7 @@
 
 .content{
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -186,6 +186,18 @@
 @media (max-width: 600px){
   .about-sec p{
     width: 300px;
+    word-wrap: break-word;
+    margin: 0 auto;
+  }
+
+  .circles h1{
+    font-size: 40px;
+  }
+}
+
+@media (max-with: 800px){
+  .about-sec p{
+    width: 500px;
     word-wrap: break-word;
     margin: 0 auto;
   }
