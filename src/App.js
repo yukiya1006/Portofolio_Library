@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path={ homeUrl } element={<HomePage />}/>
           <Route path={ homeUrl + "/language" } element={<LanguagePage />}/>
-          <Route path={ homeUrl + "/framework" } element={<FrameworkPage />}/>
+          <Route path={ homeUrl + "Potofolio_Library/framework" } element={<FrameworkPage />}/>
         </Routes>
       </Router>
       <Gsap/>
