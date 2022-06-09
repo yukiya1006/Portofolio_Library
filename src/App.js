@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Gsap from './Gsap';
 
 const homeUrl = process.env.PUBLIC_URL;
+const languageUrl = process.env.PUBLIC_URL;
+const libraryUrl = process.env.PUBLIC_URL;
 
 function App() {
   return (
@@ -13,8 +15,8 @@ function App() {
       <Router>
         <Routes>
           <Route path={ homeUrl } element={<HomePage />}/>
-          <Route path={ homeUrl + "/language" } element={<LanguagePage />}/>
-          <Route path={ homeUrl + "Potofolio_Library/framework" } element={<FrameworkPage />}/>
+          <Route path={ languageUrl } element={<LanguagePage />}/>
+          <Route path={ libraryUrl } element={<FrameworkPage />}/>
         </Routes>
       </Router>
       <Gsap/>
