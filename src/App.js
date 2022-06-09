@@ -6,8 +6,8 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Gsap from './Gsap';
 
 const homeUrl = process.env.PUBLIC_URL;
-const languageUrl = process.env.PUBLIC_URL;
-const libraryUrl = process.env.PUBLIC_URL;
+const languageUrl = process.env.LANGUAGE_URL;
+const libraryUrl = process.env.LIBRARY_URL;
 
 function App() {
   return (
