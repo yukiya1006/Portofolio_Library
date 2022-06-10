@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Potofolio_Library/static/css/main.a99d1c54.css",
-    "main.js": "/Potofolio_Library/static/js/main.a7857b4d.js",
+    "main.js": "/Potofolio_Library/static/js/main.a84175d1.js",
     "static/media/healing.gif": "/Potofolio_Library/static/media/healing.24cd79a027e3564ca4f9.gif",
     "static/media/trental.gif": "/Potofolio_Library/static/media/trental.d8369de98204ce0f8359.gif",
     "static/media/bg-05.png": "/Potofolio_Library/static/media/bg-05.c5bed260e3e9f4083e64.png",
@@ -23,10 +23,10 @@
     "static/media/node.png": "/Potofolio_Library/static/media/node.07d152a8a036951b8d14.png",
     "index.html": "/Potofolio_Library/index.html",
     "main.a99d1c54.css.map": "/Potofolio_Library/static/css/main.a99d1c54.css.map",
-    "main.a7857b4d.js.map": "/Potofolio_Library/static/js/main.a7857b4d.js.map"
+    "main.a84175d1.js.map": "/Potofolio_Library/static/js/main.a84175d1.js.map"
   },
   "entrypoints": [
     "static/css/main.a99d1c54.css",
-    "static/js/main.a7857b4d.js"
+    "static/js/main.a84175d1.js"
   ]
 }
